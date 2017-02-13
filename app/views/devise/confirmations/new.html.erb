@@ -1,0 +1,21 @@
+<div class="container">
+<h2>Resend confirmation instructions</h2>
+<div class="col-md-4">
+  <div class="row text-center">
+    <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class:"form-control", placeholder:"Enter Email" %>
+      </div>
+    </div>
+      <div class="adtl-login-actions">
+        <%= f.submit "Resend confirmation instructions", class:"btn btn-default submit-btn-sign-up" %>
+
+    <% end %>
+</br>
+    <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+      <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+    <% end -%></div>
+</div>
+</div>
