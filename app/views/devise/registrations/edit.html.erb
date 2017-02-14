@@ -8,7 +8,7 @@
       <div class="field">
         <%= f.email_field :email, autofocus: true, class:"form-control", placeholder: "Enter Email"%>
       </div>
-</br>
+     </br>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
@@ -16,11 +16,11 @@
       <div class="field">
         <%= f.password_field :password, autocomplete: "off", class:"form-control", placeholder: "Enter New Password (if you want to change it)"%>
       </div>
-</br>
+    </br>
       <div class="field">
         <%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control", placeholder: "Enter New Password Confirmation" %>
       </div>
-</br>
+    </br>
       <div class="field">
         <%= f.password_field :current_password, autocomplete: "off", class:"form-control", placeholder: "Enter Current Password" %>
       </div>
@@ -31,7 +31,7 @@
 
     <h3>Cancel my account</h3>
 
-    <p>Unhappy? :( <%= button_to "Cancel my account", registration_path(resource_name), class: "btn btn-warning", data: { confirm: "Are you sure?" }, method: :delete %></p>
+    <p>Unhappy? :( <%= button_to "Cancel my account", registration_path(resource_name), class: "btn btn-default", data: { confirm: "Are you sure?" }, method: :delete %></p>
 
   </div>
 
