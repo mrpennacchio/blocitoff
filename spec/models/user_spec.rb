@@ -7,6 +7,7 @@ RSpec.describe User, type: :model do
    it { is_expected.to validate_presence_of(:name) }
    it { is_expected.to validate_length_of(:name).is_at_least(1) }
 
+   it { is_expected.to have_many(:items) }
 
    describe "invalid user" do
      let(:user_with_no_name) {User.new(name:"", email: "username@example.com")}
