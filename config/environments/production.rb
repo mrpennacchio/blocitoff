@@ -57,6 +57,20 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "blocitoff_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  # mailtrap
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :user_name => 'a2b074ce81ea78',
+    :password => '099d4b654e44d6',
+    :address => 'smtp.mailtrap.io',
+    :domain => 'smtp.mailtrap.io',
+    :port => '2525',
+    :authentication => :cram_md5
+  }
+
+  config.action_mailer.default_url_options = { :host => 'lit-citadel-80414.herokuapp.com/' }
+
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
