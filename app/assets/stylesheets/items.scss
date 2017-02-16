@@ -11,10 +11,21 @@
   margin: 0px;
 }
 
-.to-do-list {
-
-}
-
 .list {
   padding-left: 0px;
+}
+
+.add-item-btn {
+  float: right;
+  padding-bottom: 10px;
+}
+
+.inline-form{
+  overflow: hidden;
+  padding-right: .5em;
+}
+
+.add-item {
+  width: 100%;
+  margin-top: .6em;
 }

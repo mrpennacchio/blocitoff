@@ -56,6 +56,7 @@ body {
 .form-control {
   background-color: #FEFEFA;
 }
+
 .submit-btn {
   background-color: $primary-color;
   color: white;
@@ -89,4 +90,8 @@ body {
 
 .thumbnail .caption {
   background-color: #FEFEFA
+}
+
+.to-do-count{
+  margin-top: .7rem;
 }

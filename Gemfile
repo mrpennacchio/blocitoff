@@ -49,6 +49,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'faker'
 end
 
 group :development do
