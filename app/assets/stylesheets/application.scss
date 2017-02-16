@@ -15,22 +15,26 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto);
 
+$primary-color: #44BBFF;
 
+body {
+  background-color: #FEFEFA;
+}
 .navbar {
   margin-bottom: 0px;
-  background-color: #44BBFF;
+  background-color: $primary-color;
   color: white;
   border-radius: 0px;
-  box-shadow: 5px 5px 5px #D4D4D4;
-
+  box-shadow: 2px 3px 3px #D4D4D4;
+  font-family: "Open Sans";
 }
 
 .nav-user-info{
   color: white;
   margin-top: 15px;
   margin-right: 10px;
-
 }
 
 .title{
@@ -49,14 +53,17 @@
   margin-left: -15px;
 }
 
+.form-control {
+  background-color: #FEFEFA;
+}
 .submit-btn {
-  background-color: #44BBFF;
+  background-color: $primary-color;
   color: white;
 }
 
 .submit-btn-sign-up {
   margin-top: 8px;
-  background-color: #44BBFF;
+  background-color: $primary-color;
   color: white;
 }
 
@@ -74,4 +81,12 @@
   list-style-type: circle;
   text-align: left;
   margin-left: -15px;
+}
+
+.user-prof-name{
+  font-family: "Open Sans";
+}
+
+.thumbnail .caption {
+  background-color: #FEFEFA
 }

@@ -1,0 +1,8 @@
+  <div class="field">
+      <%= form_for :items, url: user_items_path(user_id: @user.id), method: :post do |f| %>
+          <div class="form-group">
+              <%= f.text_field :name, class: "form-control", autofocus: true, placeholder: "Enter new To-Do item"%>
+              <%= f.submit "Add", class: "btn btn-default submit-btn-sign-up"%>
+          </div>
+        <% end %>
+    </div>

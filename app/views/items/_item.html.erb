@@ -1,0 +1,7 @@
+    <div class="field">
+        <% @user.items.each do |item| %>
+        <ul class="list">
+          <li class="to-do-list-items"><%= item.name %></li>
+        </ul>
+        <% end %>
+    </div>
