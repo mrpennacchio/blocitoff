@@ -1,13 +1,9 @@
-<div class="container">
-  <div class="col-md-4">
+<div class="container text-center">
 
   <h1 class="user-prof-name"> <%=@user.name%></h1>
-</br>
-  <!-- <h4> Profile Information </h4> -->
-  <!-- <p>Name: <%=@user.name%></p>
-  <p>Email: <%=@user.email %></p>
-  <p>Member Since: <%=@user.created_at.strftime('%D')%>
-  <p><%=link_to "Edit Profile", edit_user_registration_path, class: "btn btn-default submit-btn-sign-up"%></p>
-  </div> -->
-
+  </br>
+  <div class="to-do-list col-md-6 col-md-offset-3">
+    <%= render partial: "items/form", locals: {user: @user} %>
+    <%= render partial: "items/item", locals: {user: @user} %>
+  </div>
 </div>

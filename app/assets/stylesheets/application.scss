@@ -17,7 +17,7 @@
  @import "bootstrap";
  @import url(https://fonts.googleapis.com/css?family=Open+Sans|Roboto);
 
-$primary-color: #83D6DE;
+$primary-color: #44BBFF;
 
 body {
   background-color: #FEFEFA;
@@ -85,4 +85,8 @@ body {
 
 .user-prof-name{
   font-family: "Open Sans";
+}
+
+.thumbnail .caption {
+  background-color: #FEFEFA
 }

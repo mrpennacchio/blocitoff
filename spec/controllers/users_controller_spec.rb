@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
-let (:user) {User.create!(name: "user name" email:"user@example.com", password: "helloworld", password_confirmation: "helloworld", confirmed_at: Time.now)}
+let (:user) {User.create!(name: "user name", email:"user@example.com", password: "helloworld", password_confirmation: "helloworld", confirmed_at: Time.now)}
 
 before :each do
   sign_in user
@@ -19,7 +19,10 @@ end
         get :show, id: user.id
         expect(response).to render_template :show
       end
+
     end
+
+
   end
 
 
