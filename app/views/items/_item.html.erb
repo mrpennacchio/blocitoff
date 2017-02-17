@@ -1,7 +1,9 @@
     <div class="field">
         <% @user.items.each do |item| %>
-        <ul class="list">
-          <li class="to-do-list-items"><%= item.name %></li>
+        <ul class="list", id="<%= item.name %>">
+          <li class="to-do-list-items"><%= item.name %>
+          <%= link_to "", user_item_path(user_id: @user.id, id: item.id), method: :delete, class: 'complete-icon glyphicon glyphicon-ok', remote: true %>
+        </li>
         </ul>
         <% end %>
     </div>
