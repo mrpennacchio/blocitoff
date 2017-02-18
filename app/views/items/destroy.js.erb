@@ -1,3 +1,9 @@
+// ajax request to delete item
 $('.complete-icon').bind('ajax:success', function() {
    $(this).closest('li').fadeOut();
 });
+
+// flash alert after ajax request
+<% flash.each do |type, message| %>
+  $("#flash_messages_partial").html('<div class="alert alert-warning"><button type="button" class="close" data-dismiss="alert">&times;</button><%= flash[:notice] %></div>')
+<% end %>

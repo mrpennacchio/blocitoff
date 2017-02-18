@@ -5,6 +5,7 @@ class ItemsController < ApplicationController
     @items = current_user.items.build(params[:name])
     @items.name = params[:items][:name]
 
+
     if @items.save
       flash[:notice] = "Item saved to To-Do list"
       redirect_to root_path
