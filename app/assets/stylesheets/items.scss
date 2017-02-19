@@ -9,7 +9,9 @@
   padding: 10px;
   background-color: #FEFEFA;
   margin: 0px;
+  font-size: 14px;
 }
+
 
 .list {
   padding-left: 0px;
@@ -31,8 +33,17 @@
 }
 
 .complete-icon {
-  float: right;
   margin-right: 4px;
   margin-top: 1px;
   color: #27ae60;
+}
+ .time-ago{
+
+   margin-right: 5px;
+   display: inline-block;
+ }
+
+.item-name {
+  margin-right: 10px;
+  width: 100%;
 }

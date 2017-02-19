@@ -13,6 +13,9 @@ end
       expect{
         post :create, user_id: user.id, item: {name: "This is a new item"}
         }.to change(Item,:count).by(1)
+        Rails.logger.info user
+        Rails.logger.info "********"
+
     end
 
     it "redirects to the root path" do
