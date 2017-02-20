@@ -1,6 +1,9 @@
 // ajax request to delete item
-$('.complete-icon').bind('ajax:success', function() {
-   $(this).closest('li').fadeOut();
+$('.complete-icon').bind('ajax:success', function() { 
+   $(this).closest('li').fadeOut("slow", "swing", function() { //speed, style, callback after ajax
+     var count = <%= current_user.items.count %>;
+     $('.to-do-count').html(count--); //callback to change the current_user.item.count
+   });
 });
 
 // flash alert after ajax request

@@ -1,5 +1,5 @@
 <div class="form-group new-item-form">
-  <%= form_for :items, url: user_items_path(user_id: @user.id), method: :post do |f| %>
+  <%= form_for :items, url: user_items_path(user_id: @user.id), method: :post, remote: true do |f| %>
       <%= f.submit "Add", class: "btn btn-default submit-btn-sign-up add-item-btn"%>
       <div class="inline-form">
         <%= f.text_field :name, class: "form-control add-item", autofocus: true, placeholder: "Enter new To-Do item"%>

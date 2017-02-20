@@ -1,3 +1,15 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.about-info {
+  position: absolute;
+  padding: 10px;
+  background-color: #FEFEFA;
+  border: 0.5px solid #27ae60;
+  border-radius: 5px;
+  margin-top: 2em;
+}
+
+.glyphicon-arrow-right{
+  margin-left: 5px;
+}
