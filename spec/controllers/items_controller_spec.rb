@@ -11,20 +11,19 @@ end
   describe "POST create" do
     it "increases the number of Item by 1" do
       expect{
-        post :create, user_id: user.id, item: {name: "This is a new item"}
+        post :create, user_id: user.id, items: {name: "This is a new item"}
         }.to change(Item,:count).by(1)
-        Rails.logger.info user
-        Rails.logger.info "********"
+
 
     end
 
     it "redirects to the root path" do
-      post :create, user_id: user.id,  item: {name:"This is a new item"}
+      post :create, user_id: user.id,  items: {name: "This is a new item"}
       response.should redirect_to root_path
     end
 
     it "assigns the new item to @items" do
-      post :create, user_id: user.id, item: {name: "This is a new item", id: item.id}
+      post :create, user_id: user.id, items: {name: "This is a new item"}
       expect(assigns(:items)).to eq Item.first
     end
   end

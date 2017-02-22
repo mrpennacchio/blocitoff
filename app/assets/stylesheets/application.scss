@@ -50,7 +50,7 @@ body {
 }
 
 .adtl-login-actions {
-  margin-left: -15px;
+float:left;
 }
 
 .form-control {
@@ -60,12 +60,14 @@ body {
 .submit-btn {
   background-color: $primary-color;
   color: white;
+  margin-bottom: 5px;
 }
 
 .submit-btn-sign-up {
   margin-top: 8px;
   background-color: $primary-color;
   color: white;
+  margin-bottom: 5px;
 }
 
 .btn-default:hover {

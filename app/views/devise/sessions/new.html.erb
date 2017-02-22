@@ -5,7 +5,7 @@
       <div class="row text-center">
 
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        
+
         <div class="field">
           <%= f.email_field :email, class: "form-control", autofocus: true, placeholder: "Enter Email" %>
         </div>
@@ -13,23 +13,24 @@
         <div class="field">
           <%= f.password_field :password, class: "form-control", autocomplete: "off", placeholder: "Enter Password" %>
         </div>
-      </div>
 
-      <div class="adtl-login-actions">
-        <% if devise_mapping.rememberable? -%>
-          <div class="field">
-            <%= f.check_box :remember_me %>
-            <%= f.label :remember_me %>
+        <div class="adtl-login-actions">
+          <% if devise_mapping.rememberable? -%>
+            <div class="field pull-left">
+              <%= f.check_box :remember_me %>
+              <%= f.label :remember_me %>
+            </div>
+          <% end -%>
+
+          <div class="actions">
+            <%= f.submit "Log in", class: "btn btn-default submit-btn pull-left" %>
           </div>
-        <% end -%>
+        <% end %>
 
-        <div class="actions">
-          <%= f.submit "Log in", class: "btn btn-default submit-btn" %>
-        </div>
-      <% end %>
-      <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-        <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
-      <% end -%>
+        <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+          <%= link_to "Forgot your password?", new_password_path(resource_name), class: "pull-left" %><br />
+        <% end -%>
+      </div>
     </div>
   </div>
 </div>
