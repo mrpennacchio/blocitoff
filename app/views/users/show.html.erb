@@ -5,9 +5,9 @@
       <small class="pull-right">To-Do's: <span class="to-do-count"><%=@user.items.count %></span></small>
     </h1>
     <div class="pull-left about-info">
-      <p>Create To-Do items <span class="glyphicon glyphicon-arrow-right"></span></p>
-      <p>Items will be deleted after 7 days</p>
-      <p> Mark items complete by clicking the <span class='complete-icon glyphicon glyphicon-ok'></span></p>
+      <p class="about-text">Create To-Do items <span class="glyphicon glyphicon-arrow-right"> </span></br>
+      Items will be deleted after 7 days</br>
+      Mark items complete by clicking the <span class='complete-icon glyphicon glyphicon-ok'></span></p>
     </div>
   </div>
   <div class="text-center">
@@ -17,4 +17,6 @@
       <%= render partial: "items/item", locals: {user: @user} %>
     </div>
   </div>
+</div>
+
 </div>

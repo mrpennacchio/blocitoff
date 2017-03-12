@@ -2,12 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .about-info {
-  position: absolute;
+  display: block;
+  clear: left;
   padding: 10px;
   background-color: #FEFEFA;
   border: 0.5px solid #27ae60;
   border-radius: 5px;
-  margin-top: 2em;
+}
+
+.about-text {
+  margin-bottom: 0px;
 }
 
 .glyphicon-arrow-right{

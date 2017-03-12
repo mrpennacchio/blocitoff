@@ -5,11 +5,6 @@ class ItemsController < ApplicationController
     @items = current_user.items.build(params[:name])
     @items.name = params[:items][:name]
 
-    # respond_to do |format|
-    #   format.html {redirect_to root_path, notice: "Item saved to your To-Do list"}
-    #   format.js {flash.now[:notice] = "item saved to your To-Do list"}
-    # end
-
     if @items.save
       flash[:notice] = "Item saved to your To-Do list"
       redirect_to root_path
@@ -28,12 +23,5 @@ class ItemsController < ApplicationController
       format.js {flash.now[:notice] = "Item Completed"}
     end
 
-    # if @items.destroy
-    #   flash[:notice] = "Item completed"
-    #   redirect_to root_path
-    # else
-    #   flash[:alert] = "Hmm..Couldnt check that one off...try again"
-    #   redirect_to root_path
-    # end
   end
 end
