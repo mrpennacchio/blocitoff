@@ -1,24 +1,9 @@
-# README
+Blocitoff is a self destructing to-do list built with Ruby on Rails. The project includes TDD, a rake task, as well as Ajax.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Visit the page here: http://lit-citadel-80414.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+use this login information
+```
+email: user@example.com
+pass: password
+```
